@@ -11,18 +11,17 @@ body {
   list-style-type: none;
 }
 
-.container {
-  display: flex;
-}
 
 .flex-center {
   justify-content: center;
   align-items: center;
 }
 
-.title {
+.title, h1 {
   margin: 0 auto;
   text-align: center;
+  padding-right: 1050px;
+  padding-left: 40px;
 }
 
 .title h1 {
@@ -30,15 +29,17 @@ body {
 }
 
 .senha {
-  font-size: 15rem;
-  height: 70vh;
+  font-size: 20rem;
+  height: 40vh;
   background-color: cadetblue;
   color: white;
+  padding-right: 450px;
+
 }
 
 .alerta-senha {
   color: white;
-  animation: alertBG 2s infinite;
+  animation: alertBG 5s infinite;
 }
 
 @keyframes alertBG {
@@ -59,10 +60,13 @@ body {
   }
 }
 
-.container-small-center {
-  padding-top: 45px;
-  max-width: 380px;
-  margin: 0 auto;
+.container {
+  padding-top: 5px;
+  max-width: 250px;
+  border-radius: 20px;
+  margin-left: 10px
+
+  
 }
 
 .input {
@@ -83,4 +87,15 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+
+
+
+/*  INPUT DE GRID */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:600px 600px 600px;
 }

@@ -7,4 +7,6 @@ function enviarSenha() {
   socket.emit('senha', senha);
 }
 
+
+
 btn.addEventListener('click', enviarSenha);
