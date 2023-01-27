@@ -2,11 +2,11 @@ var socket = io();
 var input = document.getElementById('senha');
 var btn = document.getElementById('enviar');
 
-function enviarSenha() {
+function enviarSenha2() {
   var senha = input.value;
-  socket.emit('senha', senha);
+  socket.emit('senha2', senha);
 }
 
 
 
-btn.addEventListener('click', enviarSenha);
+btn.addEventListener('click', enviarSenha2);

@@ -9,8 +9,8 @@ socket.on('ultimaSenha', (data) => {
 });
 
 function mostrarSenha(value) {
-  var bgDiv = document.getElementById('bg3');
-  document.getElementById('senha3').innerHTML = value;
+  var bgDiv = document.getElementById('bg2');
+  document.getElementById('senha2').innerHTML = value;
   bgDiv.classList.add('alerta-senha');
   som();
   setTimeout(() => {
